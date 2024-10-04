@@ -14,21 +14,21 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '17.0.12'
-        distribution: 'temurin'
+        java-version: '17.0.12'  # 指定 OpenJDK 版本
+        distribution: 'temurin'   # 使用 OpenJDK
         architecture: 'x64'
-        check-latest: true
+        check-latest: false       # 不检查最新版本
     - name: Cache Gradle dependencies
       uses: actions/cache@v3
       with:
         path: ~/.gradle/caches
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        key: gradle-${{ runner.os }}-build-${{ hashFiles('**/*.gradle*') }}
         restore-keys: |
-          ${{ runner.os }}-gradle-
+          gradle-${{ runner.os }}-build-
     - name: Build mod jar
       run: |
         chmod +x ./gradlew
-        ./gradlew deploy
+        ./gradlew deploy --info  # 增加日志信息
     - name: Upload built jar file
       uses: actions/upload-artifact@v4
       with:
