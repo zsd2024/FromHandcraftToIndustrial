@@ -14,10 +14,10 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '17.0.12'  # 指定 OpenJDK 版本
-        distribution: 'openjdk'   # 使用 OpenJDK
+        java-version: 17  # 指定 OpenJDK 版本
+        distribution: 'temurin'   # 使用 OpenJDK
         architecture: 'x64'
-        check-latest: false
+        check-latest: true
     - name: Build mod jar
       run: |
         chmod +x ./gradlew
