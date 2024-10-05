@@ -12,7 +12,7 @@ public class corePrimitive {
     public static void load() {
         core_primitive = new CoreBlock("core-primitive-wooden") {
             {
-                requirements(Category.effect, new ItemStack[] { new ItemStack(ModItems.wood, 100) });
+                requirements(Category.effect, new ItemStack[] { new ItemStack(ModItems.log, 100) });
                 alwaysUnlocked = true;
                 isFirstTier = true;
                 unitType = UnitTypes.alpha;

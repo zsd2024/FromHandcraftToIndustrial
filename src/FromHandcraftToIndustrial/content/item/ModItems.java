@@ -4,10 +4,10 @@ import arc.graphics.Color;
 import mindustry.type.Item;
 
 public class ModItems {
-    public static Item wood;
+    public static Item log;
 
     public static void load() {
-        wood = new Item("wood", Color.valueOf("#8B4513")) {
+        log = new Item("log", Color.valueOf("#8B4513")) {
             {
                 hardness = 1;// 硬度（越高需要越高级的钻头）
                 flammability = 0.3f; // 易燃性
