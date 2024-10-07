@@ -68,5 +68,5 @@ Only use `implementation` if you want to package another Java library *with your
 </div>
 
 <p align=center>
-    <a href="README_zh_CN.md">中文简体</a> | English
+    <a href="README_zh_cn.md">中文简体</a> | English
 </p>
