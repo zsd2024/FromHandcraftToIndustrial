@@ -38,6 +38,35 @@ Only use `implementation` if you want to package another Java library *with your
 *[1]* *On Linux/Mac it's `./gradlew`, but if you're using Linux I assume you know how to run executables properly anyway.*
 *[2]: Yes, I know this is stupid. It's a Github UI limitation - while the jar itself is uploaded unzipped, there is currently no way to download it as a single file.* -->
 
+<div align=center>
+    <img src="https://raw.githubusercontent.com/zsd2024/FromHandcraftToIndustrial/master/icon.png" width="128" height="128">
+</div>
+<h1 align="center">
+    From Handcraft to Industrial
+</h1>
+<div align=center>
+    <a href="https://github.com/zsd2024/FromHandcraftToIndustrial" target="_blank">
+        <img alt="Code Size" src="https://img.shields.io/github/languages/code-size/zsd2024/FromHandcraftToIndustrial">
+    </a>
+    <a href="https://github.com/zsd2024/FromHandcraftToIndustrial" target="_blank">
+        <img alt="Number of Files"
+            src="https://img.shields.io/github/directory-file-count/zsd2024/FromHandcraftToIndustrial?type=file">
+    </a>
+    <a href="https://github.com/zsd2024/FromHandcraftToIndustrial" target="_blank">
+        <img alt="License Information" src="https://img.shields.io/github/license/zsd2024/FromHandcraftToIndustrial">
+    </a>
+    <a href="https://github.com/zsd2024/FromHandcraftToIndustrial/actions" target="_blank">
+        <img alt="Workflow Status"
+            src="https://img.shields.io/github/actions/workflow/status/zsd2024/FromHandcraftToIndustrial/.github%2Fworkflows%2FcommitTest.yml">
+    </a>
+    <a href="https://github.com/zsd2024/FromHandcraftToIndustrial/stargazers" target="_blank">
+        <img alt="Star Count" src="https://img.shields.io/github/stars/zsd2024/FromHandcraftToIndustrial">
+    </a>
+    <a href="https://wakatime.com/badge/github/zsd2024/FromHandcraftToIndustrial" target="_blank">
+        <img src="https://wakatime.com/badge/github/zsd2024/FromHandcraftToIndustrial.svg" alt="Coding Time Statistics">
+    </a>
+</div>
 
-
-[![wakatime](https://wakatime.com/badge/user/27099b29-f80e-452a-b1c2-96bff443d7ec/project/320ae7dc-8692-4707-92e5-8649955c2eba.svg)](https://wakatime.com/badge/user/27099b29-f80e-452a-b1c2-96bff443d7ec/project/320ae7dc-8692-4707-92e5-8649955c2eba)
+<p align=center>
+    <a href="README_zh_CN.md">中文简体</a> | English
+</p>

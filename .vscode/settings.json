@@ -6,7 +6,7 @@
     ],
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.dependency.packagePresentation": "hierarchical",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "monospace",
     "editor.fontLigatures": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
