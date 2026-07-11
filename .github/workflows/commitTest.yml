@@ -1,0 +1,36 @@
+name: Build Mod
+
+on: [push, pull_request]
+
+jobs:
+  buildJar:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up PATH
+      run: |
+        echo "${ANDROID_HOME}/build-tools/34.0.0" >> $GITHUB_PATH
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17.0.12'  # 指定 OpenJDK 版本
+        distribution: 'temurin'   # 使用 OpenJDK
+        architecture: 'x64'
+        check-latest: false       # 不检查最新版本
+    - name: Cache Gradle dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.gradle/caches
+        key: gradle-${{ runner.os }}-build-${{ hashFiles('**/*.gradle*') }}
+        restore-keys: |
+          gradle-${{ runner.os }}-build-
+    - name: Build mod jar
+      run: |
+        chmod +x ./gradlew
+        ./gradlew deploy --info  # 增加日志信息
+    - name: Upload built jar file
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ github.event.repository.name }}
+        path: build/libs/${{ github.event.repository.name }}.jar
