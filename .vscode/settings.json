@@ -1,0 +1,72 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.dependency.packagePresentation": "hierarchical",
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace, '微软雅黑'",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.autoGuessEncoding": true,
+    "editor.wordWrap": "on",
+    "files.candidateGuessEncodings": [
+        "utf8",
+        "gb2312"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 - MSYS": {
+            "path": [
+                "D:/Greens/msys2/msys2_shell.cmd"
+            ],
+            "args": [
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-msys"
+            ],
+            "icon": "terminal"
+        },
+        "MSYS2 - MINGW64": {
+            "path": [
+                "D:/Greens/msys2/msys2_shell.cmd"
+            ],
+            "args": [
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-mingw64"
+            ],
+            "icon": "terminal"
+        },
+        "MSYS2 - UCRT64": {
+            "path": [
+                "D:/Greens/msys2/msys2_shell.cmd"
+            ],
+            "args": [
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-ucrt64"
+            ],
+            "icon": "terminal"
+        }
+    },
+    "window.zoomLevel": 1,
+    "java.dependency.syncWithFolderExplorer": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "codesnap.transparentBackground": true,
+    "codesnap.showWindowTitle": true,
+    "codesnap.showWindowControls": false,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+    "java.project.explorer.showNonJavaResources": true,
+}
